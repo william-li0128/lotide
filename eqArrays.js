@@ -12,11 +12,11 @@ const assertEqual = function(actual, expected) {
 // function my array checking tool
 const eqArrays = function(arrayOne, arrayTwo) {
   let checkResult = true;
-  if (arrayOne.length != arrayTwo.length) {
+  if (arrayOne.length !== arrayTwo.length) {
     checkResult = false;
   }
   for (let i in arrayOne) {
-    if (arrayOne[i] !== arrayTwo[i]){
+    if (arrayOne[i] !== arrayTwo[i]) {
       checkResult = false;
     }
   }
@@ -25,10 +25,10 @@ const eqArrays = function(arrayOne, arrayTwo) {
 
 
 // test code
-console.log(eqArrays([1, 2, 3], [1, 2, 3]) )// => true
-console.log(eqArrays([1, 2, 3], [3, 2, 1]) )// => false
+console.log(eqArrays([1, 2, 3], [1, 2, 3]));// => true
+console.log(eqArrays([1, 2, 3], [3, 2, 1]));// => false
 
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])) // => true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
+console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
