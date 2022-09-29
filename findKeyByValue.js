@@ -11,7 +11,7 @@ const assertEqual = function(actual, expected) {
 
 // function starts from here
 
-const findKeyByValue = function (targetObject, value) {
+const findKeyByValue = function(targetObject, value) {
   for (const property in targetObject) {
     if (targetObject[property] === value) {
       return property;
@@ -22,8 +22,8 @@ const findKeyByValue = function (targetObject, value) {
 
 
 // code check below
-const bestTVShowsByGenre = { 
-  sci_fi: "The Expanse",
+const bestTVShowsByGenre = {
+  scienceFiction: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"
 };
