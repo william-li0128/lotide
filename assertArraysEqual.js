@@ -1,16 +1,4 @@
-// function my array checking tool
-const eqArrays = function(arrayOne, arrayTwo) {
-  let checkResult = true;
-  if (arrayOne.length !== arrayTwo.length) {
-    checkResult = false;
-  }
-  for (let i in arrayOne) {
-    if (arrayOne[i] !== arrayTwo[i]) {
-      checkResult = false;
-    }
-  }
-  return checkResult;
-};
+const eqArrays = require('./eqArrays');
 
 // function implementation
 const assertArraysEqual = function(arrayOne, arrayTwo) {
@@ -23,10 +11,4 @@ const assertArraysEqual = function(arrayOne, arrayTwo) {
   console.log(testResult);
 };
 
-
-// test code
-assertArraysEqual([1, 2, 3], [1, 2, 3]);// => true
-assertArraysEqual([1, 2, 3], [3, 2, 1]);// => false
-
-assertArraysEqual(["1", "2", "3"], ["1", "2", "3"]); // => true
-assertArraysEqual(["1", "2", "3"], ["1", "2", 3]); // => false
+module.exports = assertArraysEqual;
