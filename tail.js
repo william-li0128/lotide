@@ -1,8 +1,6 @@
 //tail function defined
 const tail = function(array) {
-  let tailedArray = [];
-  tailedArray = array.slice(1);
-  return tailedArray;
+  return array.slice(1);
 };
 
 module.exports = tail;
