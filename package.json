@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@william-li/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A smaller and simpler version of Lodash library. This package would make JavaScript easier by taking the hassle out of working with arrays, numbers, objects, strings, etc.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/william-li0128/lotide.git"
   },
-  "author": "",
+  "author": "William Li <yanliangli1994@gmail.com> (https://github.com/william-li0128)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/william-li0128/lotide/issues"
