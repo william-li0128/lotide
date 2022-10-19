@@ -18,18 +18,3 @@ const countOnly = function(allItems, itemsToCount) {
 };
 
 module.exports = countOnly;
-
-// // test code starts here
-// const firstNames = [
-//   "Karl",
-//   "Salima",
-//   "Agouhanna",
-//   "Fang",
-//   "Kavith",
-//   "Jason",
-//   "Salima",
-//   "Fang",
-//   "Joe"
-// ];
-
-// const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
